@@ -11,7 +11,7 @@ document.getElementById("fetchButton").addEventListener("click", async () => {
     }
   
     try {
-      const response = await fetch(`https://song-mood.onrender.com/${mood}`);
+      const response = await fetch(`https://song-mood.onrender.com/songs/${mood}`);
       if (!response.ok) throw new Error("Failed to fetch songs");
       const data = await response.json();
   
